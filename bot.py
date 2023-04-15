@@ -47,6 +47,6 @@ def run_bot() -> None:
                 user_message = user_message[1:]
                 await send_message(message, user_message, is_private=False, *args)
         except Exception as error:
-            print(error+' server range')
+            print(error)
             
     client.run(cnf['TOKEN'])
